@@ -5,7 +5,7 @@ import DropdownMenuDV from "./DropdownMenuDV";
 export default function Navbar() {
   return (
     <header className="bg-white shadow sticky top-0 z-50">
-      <div className="md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto flex items-center justify-between px-6 py-3">
+      <div className="md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto flex flex-wrap items-center justify-between px-6 py-3">
         <Link href="/" className="flex items-center gap-2 font-semibold text-lg">
           <Image
             src="/VINASAFE Logo.png"
