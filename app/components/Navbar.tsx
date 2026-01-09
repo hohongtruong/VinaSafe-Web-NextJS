@@ -5,7 +5,7 @@ import DropdownMenuDV from "./DropdownMenuDV";
 export default function Navbar() {
   return (
     <header className="bg-white shadow sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
+      <div className="md:max-w-3xl lg:max-w-4xl xl:max-w-5xl mx-auto flex items-center justify-between px-6 py-3">
         <Link href="/" className="flex items-center gap-2 font-semibold text-lg">
           <Image
             src="/VINASAFE Logo.png"
@@ -15,10 +15,12 @@ export default function Navbar() {
             priority
             draggable={false}
           />
-          <span className="font-bold text-blue-900">VINASAFE</span>
+          <div className="theme-vinasafe font-bold text-blue-900 leading-none">
+            VINASAFE
+          </div>
         </Link>
 
-        <nav className="text-sm">
+        <nav className="flex block text-sm">
           <ul className="flex gap-6">
             <li><Link href="/">Trang chủ</Link></li>
             <li><Link href="/gioi-thieu">Giới thiệu</Link></li>

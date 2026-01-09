@@ -24,3 +24,7 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.theme-vinasafe {
+  font-family: var(--font-exo2), sans-serif;
+}
