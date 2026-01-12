@@ -1,7 +1,7 @@
 'use client';
 import Link from "next/link";
 import Image from "next/image";
-import DropdownMenuDV from "./DropdownMenuDV";
+import DropdownMenuDV from "@/app/components/DropdownMenuDV";
 
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 
@@ -25,20 +25,20 @@ export default function Navbar() {
         </Link>
         <nav className="flex block text-sm">
           <ul className="flex gap-6">
-            <li><Link href="/"><Menu as="div" className="relative inline-block">
-                  <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50">
-                    Trang chủ</MenuButton></Menu></Link></li>
-            <li><Link href="/gioi-thieu">
+            <li><Menu as="div" className="relative inline-block">
+                  <MenuButton as={Link} href="/" className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50">
+                    Trang chủ</MenuButton></Menu></li>
+            <li>
               <Menu as="div" className="relative inline-block">
-                  <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50">
-                    Giới thiệu</MenuButton></Menu></Link></li>
+                  <MenuButton as={Link} href="/gioi-thieu" className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50">
+                    Giới thiệu</MenuButton></Menu></li>
             <li className="relative group cursor-pointer"><DropdownMenuDV /></li>
-            <li><Link href="/tin-tuc"><Menu as="div" className="relative inline-block">
-                  <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50">
-                    Tin tức</MenuButton></Menu></Link></li>
-            <li><Link href="/lien-he"><Menu as="div" className="relative inline-block">
-                  <MenuButton className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50">
-                    Liên hệ</MenuButton></Menu></Link></li>
+            <li><Menu as="div" className="relative inline-block">
+                  <MenuButton as={Link} href="/tin-tuc" className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50">
+                    Tin tức</MenuButton></Menu></li>
+            <li><Menu as="div" className="relative inline-block">
+                  <MenuButton as={Link} href="/lien-he" className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50">
+                    Liên hệ</MenuButton></Menu></li>
           </ul>
         </nav>
       </div>

@@ -4,9 +4,10 @@ import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 const menuItems = [
   { href: "/dich-vu/kiem-dinh", label: "Kiểm định an toàn" },
-  { href: "/dich-vu/dao-tao", label: "Đào tạo an toàn" },
-  { href: "/dich-vu/tu-van", label: "Tư vấn pháp lý" },
-  { href: "/dich-vu/do-kiem", label: "Đo kiểm môi trường" },
+  { href: "/dich-vu/huan-luyen", label: "Huấn luyện an toàn" },
+  { href: "/dich-vu/hop-quy", label: "Chứng nhận hợp quy" },
+  { href: "/dich-vu/hieu-chuan", label: "Kiểm định/Hiệu chuẩn đo lường" },
+  { href: "/dich-vu/kiem-tra", label: "Kiểm tra thử nghiệm" },
 ];
 
 
@@ -24,13 +25,11 @@ export default function DropdownMenuDV() {
       >
         <div className="py-1">
           {menuItems.map((item) => (
-            <MenuItem>
-            <Link
-                href={item.href}
-              className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-blue-50 data-focus:outline-hidden"
-            >
-              {item.label}
-            </Link>
+            <MenuItem key={item.href}
+              as={Link}
+              href={item.href}
+              className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-blue-50 data-focus:outline-hidden">
+                {item.label}
             </MenuItem>
           ))}
         </div>

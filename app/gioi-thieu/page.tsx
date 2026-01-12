@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import OrgChart from "@/app/components/OrgChart";
 export default function GioiThieuVinasafe() {
     return (
         <main className="bg-slate-50">
@@ -92,16 +92,16 @@ export default function GioiThieuVinasafe() {
 
             {/* Cơ cấu tổ chức */}
             <section className="bg-slate-100">
+                
                 <div className="mx-auto max-w-7xl px-6 py-12">
                     <h2 className="text-2xl font-bold text-blue-600 mb-6">Cơ cấu tổ chức công ty</h2>
+                    <OrgChart />
 
-
-                    <p className="text-gray-700 leading-relaxed mb-4">
+                    {/* <p className="text-gray-700 leading-relaxed mb-4">
                         VINASAFE được tổ chức thành các phòng ban chuyên trách gồm: Phòng Hành chính – Kế toán,
                         Phòng Kỹ thuật, Phòng Thí nghiệm, Phòng Chứng nhận, Phòng Huấn luyện, Phòng Kinh doanh
                         và Phòng Chăm sóc khách hàng.
                     </p>
-
 
                     <p className="text-gray-700 leading-relaxed mb-4">
                         Đội ngũ cán bộ công nhân viên của VINASAFE được đào tạo chuyên sâu về cơ khí, tự động hóa,
@@ -110,12 +110,11 @@ export default function GioiThieuVinasafe() {
                         chất lượng chuyên môn và tác phong làm việc chuyên nghiệp.
                     </p>
 
-
                     <p className="text-gray-700 leading-relaxed">
                         Với đội ngũ kiểm định viên có trình độ cao, giàu kinh nghiệm thực tế và tinh thần trách nhiệm,
                         VINASAFE đã triển khai thành công nhiều dự án, hợp đồng lớn trên phạm vi toàn quốc và
                         luôn nhận được sự tin tưởng của khách hàng, đối tác.
-                    </p>
+                    </p> */}
                 </div>
             </section>
         </main>
