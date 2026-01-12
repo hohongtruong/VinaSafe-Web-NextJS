@@ -5,7 +5,7 @@ export default function GioiThieuVinasafe() {
         <main className="bg-slate-50">
 
             <section className="bg-[url('/images/bg.png')] bg-cover bg-center">
-                <div className="bg-black/40">
+                <div className="bg-blue-200">
                     <div className="mx-auto max-w-7xl px-6 py-16 text-center text-white">
                         <h1 className="text-3xl md:text-4xl font-bold mb-4">Giới thiệu Công ty VINASAFE</h1>
                         <p className="max-w-4xl mx-auto text-sm md:text-base">
@@ -15,8 +15,6 @@ export default function GioiThieuVinasafe() {
                 </div>
             </section>
 
-
-            {/* Giới thiệu chung */}
             <section className="mx-auto max-w-7xl px-6 py-12">
                 <h2 className="text-2xl font-bold text-blue-600 mb-4">Giới thiệu chung</h2>
                 <p className="text-gray-700 leading-relaxed mb-4">
@@ -32,13 +30,10 @@ export default function GioiThieuVinasafe() {
                 </p>
             </section>
 
-
-
             {/* Chức năng – nhiệm vụ */}
             <section className="bg-white">
                 <div className="mx-auto max-w-7xl px-6 py-12">
                     <h2 className="text-2xl font-bold text-blue-600 mb-6">Chức năng và nhiệm vụ</h2>
-
 
                     <div className="space-y-6 text-gray-700">
                         <div>
@@ -54,7 +49,6 @@ export default function GioiThieuVinasafe() {
                             </ul>
                         </div>
 
-
                         <div>
                             <h3 className="font-semibold mb-2">2. Kiểm định – Hiệu chuẩn phương tiện đo lường</h3>
                             <ul className="list-disc pl-6 space-y-1">
@@ -65,7 +59,6 @@ export default function GioiThieuVinasafe() {
                             </ul>
                         </div>
 
-
                         <div>
                             <h3 className="font-semibold mb-2">3. Thử nghiệm</h3>
                             <ul className="list-disc pl-6 space-y-1">
@@ -75,7 +68,6 @@ export default function GioiThieuVinasafe() {
                             </ul>
                         </div>
 
-
                         <div>
                             <h3 className="font-semibold mb-2">4. Chứng nhận hợp chuẩn – hợp quy</h3>
                             <p>
@@ -84,7 +76,6 @@ export default function GioiThieuVinasafe() {
                                 thang máy, thang cuốn và băng tải chở người.
                             </p>
                         </div>
-
 
                         <div>
                             <h3 className="font-semibold mb-2">5. Huấn luyện và đào tạo</h3>
