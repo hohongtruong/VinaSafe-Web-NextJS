@@ -3,7 +3,7 @@ const { parse } = require('url');
 const next = require('next');
 
 const dev = process.env.NODE_ENV !== 'production';
-const hostname = 'vinasafe.vn'; // Replace with your domain name
+const hostname = 'localhost'; // Replace with your domain name
 // cPanel will assign a port, which you can access via process.env.PORT
 
 const port = process.env.PORT || 3000; 

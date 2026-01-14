@@ -4,7 +4,7 @@ export default function GioiThieuVinasafe() {
     return (
         <main className="bg-slate-50">
 
-            <section className="bg-[url('/images/bg.png')] bg-cover bg-center">
+            <section className="">
                 <div className="bg-blue-200">
                     <div className="mx-auto max-w-7xl px-6 py-16 text-center text-white">
                         <h1 className="text-3xl md:text-4xl font-bold mb-4">Giới thiệu Công ty VINASAFE</h1>
