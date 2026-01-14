@@ -32,7 +32,7 @@ export default function ContactPage() {
         try {
             await emailjs.send(
                 'service_q6s8g0p',
-                'template_lvzi9cm',
+                'template_lt5pmcs', // Updated template ID
                 formData
             )
 
@@ -85,16 +85,6 @@ export default function ContactPage() {
                             </p>
                             <p className="my-1 text-[15px]">
                                 kinhdoanh.vns@vinasafe.vn
-                            </p>
-
-                            <h3 className="mt-[25px] mb-2 text-[17px] font-bold">
-                                Văn phòng TP. Hồ Chí Minh
-                            </h3>
-                            <p className="my-1 text-[15px]">
-                                21A đường Cầu Xây, TP. Thủ Đức
-                            </p>
-                            <p className="my-1 text-[15px]">
-                                0888 855 769
                             </p>
                         </div>
 
