@@ -1,47 +1,62 @@
 'use client'
 
-import { useEffect } from 'react'
-import 'leaflet/dist/leaflet.css'
-import * as L from 'leaflet'
+import { useEffect, useState, ChangeEvent, FormEvent } from 'react'
+import emailjs from '@emailjs/browser'
+import 'leaflet/dist/leaflet.css'  // Keep CSS import at top (safe for SSR)
+import MapComponent from '@/app/components/MapComponent'  // Import the dynamic map component
 
 export default function ContactPage() {
+    const [formData, setFormData] = useState({
+        name: '',
+        email: '',
+        message: '',
+        company: '',
+        phone: '',
+        subject: '',
+    })
+
     useEffect(() => {
-        var blueIcon = L.icon({
-            iconUrl: '/images/icon/marker-icon.png',
-            iconSize:     [25, 41],
-            iconAnchor:   [12, 41],
-            popupAnchor:  [1, -34],
-        });
-
-        const map = L.map('map').setView([20.9810265, 105.8147015], 17)
-
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; OpenStreetMap',
-        }).addTo(map)
-
-        L.marker([20.9810265, 105.8147015], { icon: blueIcon })
-            .addTo(map)
-            .bindPopup(
-                '<b>VINASAFE</b><br/>Số 34 TT2, KĐT Mới Đại Kim, Phường Định Công, Hà Nội'
-            )
-            .openPopup()
-
-        return () => {
-            map.remove()
-        }
+        emailjs.init('JV7S54HkG3oNvbR_b')
     }, [])
+
+    const handleChange = (
+        e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    ) => {
+        const { name, value } = e.target
+        setFormData((prev) => ({ ...prev, [name]: value }))
+    }
+
+    const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+        e.preventDefault()
+
+        try {
+            await emailjs.send(
+                'service_q6s8g0p',
+                'template_lvzi9cm',
+                formData
+            )
+
+            alert('✅ Gửi liên hệ thành công!')
+            setFormData({
+                name: '',
+                email: '',
+                message: '',
+                company: '',
+                phone: '',
+                subject: '',
+            })
+        } catch (err) {
+            console.error(err)
+            alert('❌ Gửi thất bại, vui lòng thử lại!')
+        }
+    }
 
     return (
         <>
             {/* HERO */}
 
-
-            {/* MAP */}
-            <div
-                id="map"
-                className="my-10 mx-auto h-[400px] max-w-7xl rounded-xl shadow-md"
-            />
+            {/* MAP - Now using dynamic component */}
+            <MapComponent />
 
             {/* CONTACT */}
             <div className="wrapper row3">
@@ -91,6 +106,7 @@ export default function ContactPage() {
 
                             <form
                                 className="grid grid-cols-2 gap-y-[15px] gap-x-[20px] max-[900px]:grid-cols-1"
+                                onSubmit={handleSubmit}
                             >
                                 {/* Họ và tên */}
                                 <div>
@@ -99,6 +115,9 @@ export default function ContactPage() {
                                     </label>
                                     <input
                                         type="text"
+                                        name="name"
+                                        value={formData.name}
+                                        onChange={handleChange}
                                         className="w-full px-[10px] py-[8px] border border-[#d7d7d7] text-[14px] rounded-[3px]"
                                         required
                                     />
@@ -111,6 +130,9 @@ export default function ContactPage() {
                                     </label>
                                     <input
                                         type="text"
+                                        name="company"
+                                        value={formData.company}
+                                        onChange={handleChange}
                                         className="w-full px-[10px] py-[8px] border border-[#d7d7d7] text-[14px] rounded-[3px]"
                                     />
                                 </div>
@@ -122,6 +144,9 @@ export default function ContactPage() {
                                     </label>
                                     <input
                                         type="email"
+                                        name="email"
+                                        value={formData.email}
+                                        onChange={handleChange}
                                         className="w-full px-[10px] py-[8px] border border-[#d7d7d7] text-[14px] rounded-[3px]"
                                         required
                                     />
@@ -134,6 +159,9 @@ export default function ContactPage() {
                                     </label>
                                     <input
                                         type="tel"
+                                        name="phone"
+                                        value={formData.phone}
+                                        onChange={handleChange}
                                         className="w-full px-[10px] py-[8px] border border-[#d7d7d7] text-[14px] rounded-[3px]"
                                         required
                                     />
@@ -146,6 +174,9 @@ export default function ContactPage() {
                                     </label>
                                     <input
                                         type="text"
+                                        name="subject"
+                                        value={formData.subject}
+                                        onChange={handleChange}
                                         className="w-full px-[10px] py-[8px] border border-[#d7d7d7] text-[14px] rounded-[3px]"
                                         required
                                     />
@@ -157,6 +188,9 @@ export default function ContactPage() {
                                         Nội dung
                                     </label>
                                     <textarea
+                                        name="message"
+                                        value={formData.message}
+                                        onChange={handleChange}
                                         className="w-full px-[10px] py-[8px] border border-[#d7d7d7] text-[14px] rounded-[3px] min-h-[120px] resize-y"
                                         required
                                     />
@@ -166,7 +200,8 @@ export default function ContactPage() {
                                 <div className="col-span-2 max-[900px]:col-span-1">
                                     <button
                                         type="submit"
-                                        className="px-[30px] py-[10px] rounded-[3px] bg-[#53d3de] text-white font-bold uppercase tracking-[1px] hover:bg-[#1e5bbf] transition">
+                                        className="px-[30px] py-[10px] rounded-[3px] bg-[#53d3de] text-white font-bold uppercase tracking-[1px] hover:bg-[#1e5bbf] transition"
+                                    >
                                         Gửi liên hệ
                                     </button>
                                 </div>

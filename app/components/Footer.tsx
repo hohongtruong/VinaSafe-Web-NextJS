@@ -24,10 +24,10 @@ export default function Footer() {
             {/* HCM */}
             <div>
               <h5 className="mb-2 font-semibold text-white">
-                VĂN PHÒNG TP. HỒ CHÍ MINH
+                CHI NHÁNH VŨNG TÀU
               </h5>
               <p className="mb-1">
-                Địa chỉ: 21A Cầu Xây, P. Tân Phú, Q.9, TP.HCM
+                Địa chỉ: Khu Phố Phước Lập - Phường Mỹ Xuân - Thị Xã Phú Mỹ - Bà Rịa - Vũng Tàu
               </p>
               <p className="mb-1">ĐT: 0888 855 769</p>
               <p className="mb-1">
@@ -96,7 +96,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="mt-8 border-t border-white/10 py-4 text-sm text-gray-400">
-          © 2021 – All Rights Reserved – VINASAFE.VN
+          © 2021 - All Rights Reserved - VINASAFE.VN
         </div>
       </div>
     </div>
