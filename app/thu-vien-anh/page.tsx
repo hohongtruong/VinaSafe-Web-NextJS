@@ -42,8 +42,104 @@ const galleryData: GalleryItem[] = [
     categories: ['HuanLuyen'],
   },
   {
+    src: '/images/HuanLuyen/huấn luyện kiểm tra an toàn vận hành cầu trục.jpg',
+    full: '/images/HuanLuyen/huấn luyện kiểm tra an toàn vận hành cầu trục.jpg',
+    title: 'Huấn luyện kiểm tra an toàn vận hành cầu trục',
+    categories: ['HuanLuyen'],
+  },
+  {
+    src: '/images/HuanLuyen/huấn luyện sơ cấp cứu.jpg',
+    full: '/images/HuanLuyen/huấn luyện sơ cấp cứu.jpg',
+    title: 'Huấn luyện sơ cấp cứu',
+    categories: ['HuanLuyen'],
+  },
+  {
+    src: '/images/HuanLuyen/huấn luyện vận hành xe nâng.jpg',
+    full: '/images/HuanLuyen/huấn luyện vận hành xe nâng.jpg',
+    title: 'Huấn luyện vận hành xe nâng',
+    categories: ['HuanLuyen'],
+  },
+  {
     src: '/images/AnhKiemDinh/KD_1.jpg',
     full: '/images/AnhKiemDinh/KD_1.jpg',
+    title: 'Hoạt động kiểm định',
+    categories: ['KiemDinh'],
+  },
+  {
+    src: '/images/AnhKiemDinh/KD_2.jpg',
+    full: '/images/AnhKiemDinh/KD_2.jpg',
+    title: 'Hoạt động kiểm định',
+    categories: ['KiemDinh'],
+  },
+  {
+    src: '/images/AnhKiemDinh/KD_3.jpg',
+    full: '/images/AnhKiemDinh/KD_3.jpg',
+    title: 'Hoạt động kiểm định',
+    categories: ['KiemDinh'],
+  },
+  {
+    src: '/images/AnhKiemDinh/KD_4.jpg',
+    full: '/images/AnhKiemDinh/KD_4.jpg',
+    title: 'Hoạt động kiểm định',
+    categories: ['KiemDinh'],
+  },
+  {
+    src: '/images/AnhKiemDinh/KD_5.jpg',
+    full: '/images/AnhKiemDinh/KD_5.jpg',
+    title: 'Hoạt động kiểm định',
+    categories: ['KiemDinh'],
+  },
+  {
+    src: '/images/AnhKiemDinh/KD_6.jpg',
+    full: '/images/AnhKiemDinh/KD_6.jpg',
+    title: 'Hoạt động kiểm định',
+    categories: ['KiemDinh'],
+  },
+  {
+    src: '/images/AnhKiemDinh/KD_7.jpg',
+    full: '/images/AnhKiemDinh/KD_7.jpg',
+    title: 'Hoạt động kiểm định',
+    categories: ['KiemDinh'],
+  },
+  {
+    src: '/images/AnhKiemDinh/KD_8.jpg',
+    full: '/images/AnhKiemDinh/KD_8.jpg',
+    title: 'Hoạt động kiểm định',
+    categories: ['KiemDinh'],
+  },
+  {
+    src: '/images/AnhKiemDinh/KD_9.jpg',
+    full: '/images/AnhKiemDinh/KD_9.jpg',
+    title: 'Hoạt động kiểm định',
+    categories: ['KiemDinh'],
+  },
+  {
+    src: '/images/AnhKiemDinh/KD_10.jpg',
+    full: '/images/AnhKiemDinh/KD_10.jpg',
+    title: 'Hoạt động kiểm định',
+    categories: ['KiemDinh'],
+  },
+  {
+    src: '/images/AnhKiemDinh/KD_11.jpg',
+    full: '/images/AnhKiemDinh/KD_11.jpg',
+    title: 'Hoạt động kiểm định',
+    categories: ['KiemDinh'],
+  },
+  {
+    src: '/images/AnhKiemDinh/KD_12.jpg',
+    full: '/images/AnhKiemDinh/KD_12.jpg',
+    title: 'Hoạt động kiểm định',
+    categories: ['KiemDinh'],
+  },
+  {
+    src: '/images/AnhKiemDinh/KD_13.jpg',
+    full: '/images/AnhKiemDinh/KD_13.jpg',
+    title: 'Hoạt động kiểm định',
+    categories: ['KiemDinh'],
+  },
+  {
+    src: '/images/AnhKiemDinh/KD_14.jpg',
+    full: '/images/AnhKiemDinh/KD_14.jpg',
     title: 'Hoạt động kiểm định',
     categories: ['KiemDinh'],
   },
@@ -122,7 +218,7 @@ export default function Gallery() {
       {/* LIGHTBOX */}
       {lightboxImg && (
         <div
-          className="fixed inset-0 bg-blue-200 flex items-center justify-center z-50"
+          className="fixed inset-0 bg-blue-200/25 flex items-center justify-center z-50"
           onClick={() => setLightboxImg(null)}
         >
           <img

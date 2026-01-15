@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Hero from "@/app/components/Hero";
 // import ProjectCarousel from "@/app/components/ProjectCarousel";
-// import CustomerSlider from "@/app/components/CustomerSlider";
+import CustomerSlider from "@/app/components/CustomerSlider";
 export default function Home() {
   return (
     <>
@@ -194,7 +194,7 @@ export default function Home() {
       </div>
 
       {/* <ProjectCarousel /> */}
-      {/* <CustomerSlider /> */}
+      <CustomerSlider />
     </>
   );
 }
