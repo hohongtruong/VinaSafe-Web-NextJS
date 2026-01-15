@@ -14,6 +14,7 @@ export default function ContactPage() {
         phone: '',
         subject: '',
     })
+    const [isSending, setIsSending] = useState(false)
 
     useEffect(() => {
         emailjs.init('JV7S54HkG3oNvbR_b')
@@ -28,7 +29,8 @@ export default function ContactPage() {
 
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-
+        if (isSending) return
+        setIsSending(true)
         try {
             await emailjs.send(
                 'service_q6s8g0p',
@@ -48,6 +50,8 @@ export default function ContactPage() {
         } catch (err) {
             console.error(err)
             alert('❌ Gửi thất bại, vui lòng thử lại!')
+        } finally {
+        setIsSending(false)
         }
     }
 
@@ -157,7 +161,7 @@ export default function ContactPage() {
                                     />
                                 </div>
 
-                                {/* Tiêu đề – full width */}
+                                {/* Tiêu đề - full width */}
                                 <div className="col-span-2 max-[900px]:col-span-1">
                                     <label className="block mb-[5px] font-medium text-[14px]">
                                         Tiêu đề
@@ -172,7 +176,7 @@ export default function ContactPage() {
                                     />
                                 </div>
 
-                                {/* Nội dung – full width */}
+                                {/* Nội dung - full width */}
                                 <div className="col-span-2 max-[900px]:col-span-1">
                                     <label className="block mb-[5px] font-medium text-[14px]">
                                         Nội dung
@@ -186,13 +190,13 @@ export default function ContactPage() {
                                     />
                                 </div>
 
-                                {/* Button – full width */}
+                                {/* Button - full width */}
                                 <div className="col-span-2 max-[900px]:col-span-1">
                                     <button
                                         type="submit"
                                         className="px-[30px] py-[10px] rounded-[3px] bg-[#53d3de] text-white font-bold uppercase tracking-[1px] hover:bg-[#1e5bbf] transition"
                                     >
-                                        Gửi liên hệ
+                                        {isSending ? 'Đang gửi...' : 'Gửi liên hệ'}
                                     </button>
                                 </div>
                             </form>

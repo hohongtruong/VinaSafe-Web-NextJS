@@ -14,7 +14,7 @@ export default function Footer() {
                 Địa chỉ: Số 34 TT2, KĐT Mới Đại Kim, Phường Định Công, Hà Nội.
               </p>
               <p className="mb-1">
-                ĐT: (024) 3540 2559 – (024) 3540 2558
+                ĐT: (024) 3540 2559 - (024) 3540 2558
               </p>
               <p className="mb-1">
                 Email: kinhdoanh.vns@vinasafe.vn

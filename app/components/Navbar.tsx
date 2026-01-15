@@ -2,6 +2,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import DropdownMenuDV from "@/app/components/DropdownMenuDV";
+import DropdownMenuTT from "@/app/components/DropdownMenuTT";
 
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 
@@ -34,9 +35,10 @@ export default function Navbar() {
                   <MenuButton as={Link} href="/gioi-thieu" className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50">
                     Giới thiệu</MenuButton></Menu></li>
             <li className="relative group cursor-pointer"><DropdownMenuDV /></li>
+            <li className="relative group cursor-pointer"><DropdownMenuTT /></li>
             <li><Menu as="div" className="relative inline-block">
-                  <MenuButton as={Link} href="/tin-tuc" className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50">
-                    Tin tức</MenuButton></Menu></li>
+                  <MenuButton as={Link} href="/thu-vien-anh" className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50">
+                    Thư viện ảnh</MenuButton></Menu></li>
             <li><Menu as="div" className="relative inline-block">
                   <MenuButton as={Link} href="/lien-he" className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50">
                     Liên hệ</MenuButton></Menu></li>

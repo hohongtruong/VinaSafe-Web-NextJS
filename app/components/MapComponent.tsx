@@ -41,6 +41,7 @@ const MapComponent = () => {
         margin: '0 auto',
         borderRadius: '0.75rem',
         boxShadow: '0 4px 6px -1px rgba(0,0,0,.1)',
+        zIndex: 1
       }}
     >
       <TileLayer
