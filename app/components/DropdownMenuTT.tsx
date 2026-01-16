@@ -3,13 +3,12 @@ import Link from "next/link";
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 const menuItems = [
-  { href: "/thong-tin/hoat-dong-cong-ty", label: "Hoạt động công ty" },
-  { href: "/thong-tin/kien-thuc-an-toan-lao-dong", label: "Kiến thức an toàn lao động" },
-  { href: "/thong-tin/phap-luat", label: "Pháp luật" },
-  { href: "/thong-tin/thong-bao", label: "Thông báo" },
-  { href: "/thong-tin/hoi-dap", label: "Hỏi đáp" },
+  { href: "/tin-tuc/hoat-dong-cong-ty", label: "Hoạt động công ty" },
+  { href: "/tin-tuc/kien-thuc-an-toan-lao-dong", label: "Kiến thức an toàn lao động" },
+  { href: "/tin-tuc/phap-luat", label: "Pháp luật" },
+  { href: "/tin-tuc/thong-bao", label: "Thông báo" },
+  { href: "/tin-tuc/hoi-dap", label: "Hỏi đáp" },
 ];
-
 
 export default function DropdownMenuTT() {
   return (
