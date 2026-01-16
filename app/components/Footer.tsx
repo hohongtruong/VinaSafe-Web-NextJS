@@ -20,35 +20,7 @@ export default function Footer() {
                 Email: kinhdoanh.vns@vinasafe.vn
               </p>
             </div>
-
-            {/* HCM */}
-            <div>
-              <h5 className="mb-2 font-semibold text-white">
-                CHI NHÁNH VŨNG TÀU
-              </h5>
-              <p className="mb-1">
-                Địa chỉ: Khu Phố Phước Lập - Phường Mỹ Xuân - Thị Xã Phú Mỹ - Bà Rịa - Vũng Tàu
-              </p>
-              <p className="mb-1">ĐT: 0888 855 769</p>
-              <p className="mb-1">
-                Email: kinhdoanh.vns@vinasafe.vn
-              </p>
-            </div>
-
-            {/* Đà Nẵng */}
-            <div>
-              <h5 className="mb-2 font-semibold text-white">
-                CHI NHÁNH ĐÀ NẴNG
-              </h5>
-              <p className="mb-1">
-                Số 7 Phú Thạnh 10, P. Hòa Minh, Q. Liên Chiểu, Đà Nẵng
-              </p>
-              <p className="mb-1">ĐT: 0888 855 769</p>
-              <p className="mb-1">
-                Email: kinhdoanh.vns@vinasafe.vn
-              </p>
-            </div>
-
+            
             {/* Vĩnh Phúc */}
             <div>
               <h5 className="mb-2 font-semibold text-white">
@@ -70,6 +42,34 @@ export default function Footer() {
               </h5>
               <p className="mb-1">
                 01 Hoàng Hoa Thám, P. Cốc Lếu, TP. Lào Cai
+              </p>
+              <p className="mb-1">ĐT: 0888 855 769</p>
+              <p className="mb-1">
+                Email: kinhdoanh.vns@vinasafe.vn
+              </p>
+            </div>
+
+            {/* VŨNG TÀU */}
+            <div>
+              <h5 className="mb-2 font-semibold text-white">
+                CHI NHÁNH VŨNG TÀU
+              </h5>
+              <p className="mb-1">
+                Địa chỉ: Khu Phố Phước Lập - Phường Mỹ Xuân - Thị Xã Phú Mỹ - Bà Rịa - Vũng Tàu
+              </p>
+              <p className="mb-1">ĐT: 0888 855 769</p>
+              <p className="mb-1">
+                Email: kinhdoanh.vns@vinasafe.vn
+              </p>
+            </div>
+
+            {/* Đà Nẵng */}
+            <div>
+              <h5 className="mb-2 font-semibold text-white">
+                CHI NHÁNH ĐÀ NẴNG
+              </h5>
+              <p className="mb-1">
+                Số 7 Phú Thạnh 10, P. Hòa Minh, Q. Liên Chiểu, Đà Nẵng
               </p>
               <p className="mb-1">ĐT: 0888 855 769</p>
               <p className="mb-1">
