@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Exo_2 } from "next/font/google";
 import "./globals.css";
 import 'leaflet/dist/leaflet.css'
-import Navbar from "@/app/components/Navbar";
+import NavbarMenu from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import FloatContact from "@/app/components/FloatContact";
+import Providers from '@/app/providers';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,8 +38,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${exo2.variable} antialiased`}
       >
-        <Navbar />
-        {children}
+        <NavbarMenu />
+        <Providers>
+          {children}
+        </Providers>
         <Footer />
         <FloatContact />
       </body>
