@@ -143,6 +143,55 @@ const galleryData: GalleryItem[] = [
     title: 'Hoạt động kiểm định',
     categories: ['KiemDinh'],
   },
+  {
+    src: '/images/AnhGiangDay/z7444975767726_4a1af2892dedf188976b41e0738158fd.jpg',
+    full: '/images/AnhGiangDay/z7444975767726_4a1af2892dedf188976b41e0738158fd.jpg',
+    title: 'Hoạt động Huấn luyện tại bệnh viện',
+    categories: ['HuanLuyen'],
+  },
+  {
+    src: '/images/AnhGiangDay/z7444975767684_b57efeb1be4849629d81dc034bdb34b0.jpg',
+    full: '/images/AnhGiangDay/z7444975767684_b57efeb1be4849629d81dc034bdb34b0.jpg',
+    title: 'Hoạt động Huấn luyện tại bệnh viện',
+    categories: ['HuanLuyen'],
+  },
+  {
+    src: '/images/AnhGiangDay/z7444975767697_cf514651933c0b4594e8c1f0fd2421e7.jpg',
+    full: '/images/AnhGiangDay/z7444975767697_cf514651933c0b4594e8c1f0fd2421e7.jpg',
+    title: 'Hoạt động Huấn luyện tại bệnh viện',
+    categories: ['HuanLuyen'],
+  },
+  {
+    src: '/images/AnhGiangDay/z7444975767702_aa080f4ebd871ab023e71cedd0ea3c7c.jpg',
+    full: '/images/AnhGiangDay/z7444975767702_aa080f4ebd871ab023e71cedd0ea3c7c.jpg',
+    title: 'Hoạt động Huấn luyện tại bệnh viện',
+    categories: ['HuanLuyen'],
+  },
+  {
+    src: '/images/AnhGiangDay/z7444975767705_51bc5aed659b820c9d53bf0012a5625b.jpg',
+    full: '/images/AnhGiangDay/z7444975767705_51bc5aed659b820c9d53bf0012a5625b.jpg',
+    title: 'Hoạt động Huấn luyện tại bệnh viện',
+    categories: ['HuanLuyen'],
+  },
+  {
+    src: '/images/AnhGiangDay/z7444975767721_05f936e36ccbee92713efaacf0a27e01.jpg',
+    full: '/images/AnhGiangDay/z7444975767721_05f936e36ccbee92713efaacf0a27e01.jpg',
+    title: 'Hoạt động Huấn luyện tại bệnh viện',
+    categories: ['HuanLuyen'],
+  },
+  {
+    src: '/images/AnhGiangDay/z7444975767727_eb17d76424a56446e7a07df9e3b05fa2.jpg',
+    full: '/images/AnhGiangDay/z7444975767727_eb17d76424a56446e7a07df9e3b05fa2.jpg',
+    title: 'Hoạt động Huấn luyện tại bệnh viện',
+    categories: ['HuanLuyen'],
+  },
+  {
+    src: '/images/AnhGiangDay/z7444975767710_216a8aee6586eb40682a4b2e6f16907d.jpg',
+    full: '/images/AnhGiangDay/z7444975767710_216a8aee6586eb40682a4b2e6f16907d.jpg',
+    title: 'Hoạt động Huấn luyện tại bệnh viện',
+    categories: ['HuanLuyen'],
+  },
+
   // 👉 thêm các ảnh còn lại tương tự
 ]
 
