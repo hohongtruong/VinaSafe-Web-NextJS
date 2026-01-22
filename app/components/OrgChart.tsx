@@ -41,10 +41,6 @@ export default function OrgChart() {
 
   return (
     <div className="mt-10">
-      <h4 className="text-center font-bold text-xl mb-5">
-        Cơ cấu tổ chức
-      </h4>
-
       <div className="overflow-x-auto flex justify-center">
         <Chart
           chartType="OrgChart"
@@ -54,7 +50,6 @@ export default function OrgChart() {
           height="600px"
         />
       </div>
-
     </div>
   );
 }
