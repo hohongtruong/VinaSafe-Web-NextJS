@@ -44,12 +44,12 @@ export default function NavbarMenu() {
 
                 <NavbarContent justify="end">
                     <NavbarItem isActive={pathname === "/"}>
-                        <Link href="/" className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50">
+                        <Link href="/" className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2.5 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50">
                             Trang chủ</Link>
                     </NavbarItem>
 
                     <NavbarItem isActive={pathname === "/gioi-thieu"}>
-                        <Link href="/gioi-thieu" className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50">
+                        <Link href="/gioi-thieu" className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2.5 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50">
                             Giới thiệu</Link>
                     </NavbarItem>
 
@@ -62,12 +62,12 @@ export default function NavbarMenu() {
                     </NavbarItem>
 
                     <NavbarItem isActive={pathname === "/thu-vien-anh"}>
-                        <Link href="/thu-vien-anh" className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50">
+                        <Link href="/thu-vien-anh" className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2.5 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50">
                             Thư viện ảnh</Link>
                     </NavbarItem>
 
                     <NavbarItem isActive={pathname === "/lien-he"}>
-                        <Link href="/lien-he" className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50">
+                        <Link href="/lien-he" className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2.5 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50">
                             Liên hệ</Link>
                     </NavbarItem>
 
