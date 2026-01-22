@@ -1,6 +1,8 @@
 import Link from "next/link";
+import type { CSSProperties } from "react";
 
-const divStyle = {
+
+const divStyle: CSSProperties = {
   backgroundImage: 'url("/images/AnhTapThe/ảnh tập thể.png")',
   backgroundSize: 'cover',
   backgroundPosition: '50% 10%',
@@ -13,7 +15,7 @@ const divStyle = {
   position: 'relative', // thêm thuộc tính position
 };
 
-const afterStyle = {
+const afterStyle: CSSProperties = {
   content: '',
   position: 'absolute',
   top: 0,
