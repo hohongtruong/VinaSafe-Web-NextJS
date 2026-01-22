@@ -1,8 +1,17 @@
 'use client';
-import Link from "next/link";
-import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
+
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
-import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button} from "@heroui/react";
+import {
+  Navbar,
+  NavbarContent,
+  NavbarItem,
+  Button,
+  Dropdown,
+  DropdownTrigger,
+  DropdownMenu,
+  DropdownItem,
+  Link
+} from "@heroui/react";
 const menuItems = [
   { href: "/tin-tuc/hoat-dong-cong-ty", label: "Hoạt động công ty", key: "hoat-dong-cong-ty" },
   { href: "/tin-tuc/kien-thuc-an-toan-lao-dong", label: "Kiến thức an toàn lao động", key: "kien-thuc-an-toan-lao-dong" },
@@ -11,15 +20,21 @@ const menuItems = [
   { href: "/tin-tuc/hoi-dap", label: "Hỏi đáp", key: "hoi-dap" },
 ];
 
-export default function DropdownMenuTT() {
+type DropdownMenuTTProps = {
+  isActive?: boolean;
+};
+
+export default function DropdownMenuTT({ isActive }: DropdownMenuTTProps) {
   return (
     <Dropdown>
-      <DropdownTrigger className='inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50'>
-        <Button variant="light"
-          className="flex items-center gap-1 text-blue-900 font-semibold hover:bg-blue-50"
-          endContent={<ChevronDownIcon className="size-4" />}
-        >Tin tức</Button>
-      </DropdownTrigger>
+      <NavbarItem isActive={isActive}>
+        <DropdownTrigger className='inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50'>
+          <Button variant="light"
+            className="flex items-center gap-1 text-blue-900 font-semibold hover:bg-blue-50"
+            endContent={<ChevronDownIcon className="size-4" />}
+          >Tin tức</Button>
+        </DropdownTrigger>
+      </NavbarItem>
       <DropdownMenu aria-label="Dynamic Actions" items={menuItems} classNames={{
         base: "rounded-2xl border border-gray-300 bg-white shadow-lg p-1",
       }}>

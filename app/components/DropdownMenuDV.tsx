@@ -1,6 +1,15 @@
-import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
-import { Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button} from "@heroui/react";
+import {
+  Navbar,
+  NavbarContent,
+  NavbarItem,
+  Button,
+  Dropdown,
+  DropdownTrigger,
+  DropdownMenu,
+  DropdownItem,
+  Link
+} from "@heroui/react";
 
 const menuItems = [
   { href: "/dich-vu/kiem-dinh", label: "Kiểm định an toàn", key: "kiem-dinh" },
@@ -10,15 +19,22 @@ const menuItems = [
   { href: "/dich-vu/kiem-tra", label: "Kiểm tra thử nghiệm", key: "kiem-tra" },
 ];
 
-export default function DropdownMenuDV() {
+type DropdownMenuDVProps = {
+  isActive?: boolean;
+};
+
+
+export default function DropdownMenuDV({ isActive }: DropdownMenuDVProps) {
   return (
     <Dropdown>
-      <DropdownTrigger className='inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50'>
-        <Button variant="light"
-          className="flex items-center gap-1 text-blue-900 font-semibold hover:bg-blue-50"
-          endContent={<ChevronDownIcon className="size-4" />}
-        >Dịch vụ</Button>
-      </DropdownTrigger>
+      <NavbarItem isActive={isActive}>
+        <DropdownTrigger className='inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50'>
+          <Button variant="light"
+            className="flex items-center gap-1 text-blue-900 font-semibold hover:bg-blue-50"
+            endContent={<ChevronDownIcon className="size-4" />}
+          >Dịch vụ</Button>
+        </DropdownTrigger>
+      </NavbarItem>
       <DropdownMenu aria-label="Dynamic Actions" items={menuItems} classNames={{
         base: "rounded-2xl border border-gray-300 bg-white shadow-lg p-1",
       }}>

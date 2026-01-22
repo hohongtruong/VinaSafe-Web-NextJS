@@ -53,13 +53,9 @@ export default function NavbarMenu() {
                             Giới thiệu</Link>
                     </NavbarItem>
 
-                    <NavbarItem isActive={pathname.startsWith("/dich-vu")}>
-                        <DropdownMenuDV />
-                    </NavbarItem>
+                    <DropdownMenuDV isActive={pathname.startsWith("/dich-vu")} />
 
-                    <NavbarItem isActive={pathname.startsWith("/tin-tuc")}>
-                        <DropdownMenuTT />
-                    </NavbarItem>
+                    <DropdownMenuTT isActive={pathname.startsWith("/tin-tuc")} />
 
                     <NavbarItem isActive={pathname === "/thu-vien-anh"}>
                         <Link href="/thu-vien-anh" className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2.5 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50">
