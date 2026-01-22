@@ -43,13 +43,13 @@ export default function NavbarMenu() {
                 </NavbarBrand>
 
                 <NavbarContent justify="end">
-                    <NavbarItem isActive={pathname === "/"}>
-                        <Link href="/" className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2.5 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50">
+                    <NavbarItem isActive={pathname === "/"} className="group">
+                        <Link href="/" className="group-data-[active=true]:hover:bg-blue-900/90 group-data-[active=true]:text-blue-50 group-data-[active=true]:bg-blue-900 inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2.5 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50">
                             Trang chủ</Link>
                     </NavbarItem>
 
-                    <NavbarItem isActive={pathname === "/gioi-thieu"}>
-                        <Link href="/gioi-thieu" className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2.5 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50">
+                    <NavbarItem isActive={pathname === "/gioi-thieu"} className="group">
+                        <Link href="/gioi-thieu" className="group-data-[active=true]:hover:bg-blue-900/90 group-data-[active=true]:text-blue-50 group-data-[active=true]:bg-blue-900 inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2.5 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50">
                             Giới thiệu</Link>
                     </NavbarItem>
 
@@ -57,13 +57,13 @@ export default function NavbarMenu() {
 
                     <DropdownMenuTT isActive={pathname.startsWith("/tin-tuc")} />
 
-                    <NavbarItem isActive={pathname === "/thu-vien-anh"}>
-                        <Link href="/thu-vien-anh" className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2.5 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50">
+                    <NavbarItem isActive={pathname === "/thu-vien-anh"} className="group">
+                        <Link href="/thu-vien-anh" className="group-data-[active=true]:hover:bg-blue-900/90 group-data-[active=true]:text-blue-50 group-data-[active=true]:bg-blue-900 inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2.5 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50">
                             Thư viện ảnh</Link>
                     </NavbarItem>
 
-                    <NavbarItem isActive={pathname === "/lien-he"}>
-                        <Link href="/lien-he" className="inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2.5 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50">
+                    <NavbarItem isActive={pathname === "/lien-he"} className="group">
+                        <Link href="/lien-he" className="group-data-[active=true]:hover:bg-blue-900/90 group-data-[active=true]:text-blue-50 group-data-[active=true]:bg-blue-900 inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2.5 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50">
                             Liên hệ</Link>
                     </NavbarItem>
 

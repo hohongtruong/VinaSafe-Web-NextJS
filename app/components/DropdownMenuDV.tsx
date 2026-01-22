@@ -27,10 +27,10 @@ type DropdownMenuDVProps = {
 export default function DropdownMenuDV({ isActive }: DropdownMenuDVProps) {
   return (
     <Dropdown>
-      <NavbarItem isActive={isActive}>
+      <NavbarItem isActive={isActive} className='group'>
         <DropdownTrigger className='inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white px-3 py-2 text-sm font-semibold shadow-xs inset-ring-1 inset-ring-gray-300 hover:bg-blue-50'>
           <Button variant="light"
-            className="flex items-center gap-1 text-blue-900 font-semibold hover:bg-blue-50"
+            className="group-data-[active=true]:hover:bg-blue-900/90 group-data-[active=true]:text-blue-50 group-data-[active=true]:bg-blue-900 flex items-center gap-1 text-blue-900 font-semibold hover:bg-blue-50"
             endContent={<ChevronDownIcon className="size-4" />}
           >Dịch vụ</Button>
         </DropdownTrigger>
