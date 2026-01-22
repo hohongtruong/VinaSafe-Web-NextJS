@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import dynamic from 'next/dynamic'
 import 'leaflet/dist/leaflet.css'
+import { m } from 'framer-motion'
 
 const MapComponent = () => {
   const [Map, setMap] = useState<any>(null)
@@ -41,7 +42,8 @@ const MapComponent = () => {
         margin: '0 auto',
         borderRadius: '0.75rem',
         boxShadow: '0 4px 6px -1px rgba(0,0,0,.1)',
-        zIndex: 1
+        zIndex: 1,
+        marginTop: '2rem'
       }}
     >
       <TileLayer
